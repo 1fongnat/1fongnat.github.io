@@ -1,0 +1,64 @@
+/* Font */
+body{
+    margin: 0;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation Bar */
+nav{
+    background-color: #eeeeee;
+    position: sticky;
+    top: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    padding: 2vw 0;
+}
+
+nav a:hover{
+    background-color: #000000;
+}
+
+.navbar-item{
+    margin: 0;
+    padding: 2vw;
+    color: #000000;
+}
+/* Members */
+
+.profile-picture{
+    padding-right: 2vw;
+    grid-area: profile-picture;
+    place-self: center;
+}
+
+.name { 
+    grid-area: name;
+}
+  
+.description { 
+    grid-area: description;
+}
+
+.members{  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "profile-picture profile-picture name"
+      "profile-picture profile-picture description"
+      ". . .";
+  }
+  
