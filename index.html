@@ -3,141 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Team Codey's Website</title>
     <link rel="stylesheet" href="style.css">
-    <title>Group Name</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li class="navbar-item"><a href="#home">Group Name</a></li>
-            <li class="navbar-item"><a href="#intro">Introduction</a></li>
-            <li class="navbar-item"><a href="#members">Members</a></li>
-            <li class="navbar-item"><a href="#assignments">Assignments</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <div class="dropdown" id="menu-button">
+                <div class="menu-icon" onclick="toggleDropdown()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="dropdown-content" id="dropdown-menu">
+                    <button onclick="scrollToSection('#home')">Home</button>
+                    <button onclick="scrollToSection('#introduction')">Introduction</button>
+                    <button onclick="scrollToSection('#members')">Members</button>
+                    <button onclick="scrollToSection('#assignments')">Assignments</button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <h1 class="home" id="home">
-        Welcome to Group 12's page!!
-    </h1>
-    <p>
-        CISC 322 group project
-    </p>
+    <section id="introduction" class="section">
+        <h2>Introduction</h2>
+        <p>Welcome to Team Codey (Group 12's) website! Throughout the term, you'll see this website constantly being updated with our latest versions of assignments. </p>
+    </section>
 
-    <h1 class="intro" id="intro">
-        Introduction
-    </h1>
-    <p class="intro">
-        Smaller introduction
-    </p>
-
-    <h1>
-        Members
-    </h1>
-
-    <div class="members" id="members">
-        <div class="profile-picture">
-            <img src="Pranshu.png"> 
-        </div>
-        <div class="name">
-            <h2>
-                Pranshu
-            </h2>
-        </div>
-        <div class="description">
-            <p>
-                Email, year, program, favourite colour, role in project
-            </p>
-        </div>
-    </div>
-
-    <div class="members" id="members">
-        <div class="profile-picture">
-            <img src="Pranshu.png"> 
-        </div>
-        <div class="name">
-            <h2>
-                name
-            </h2>
-        </div>
-        <div class="description">
-            <p>
-                Email, year, program, favourite colour, role in project
-            </p>
-        </div>
-    </div>
-
-    <div class="members" id="members">
-        <div class="profile-picture">
-            <img src="Pranshu.png"> 
-        </div>
-        <div class="name">
-            <h2>
-                name
-            </h2>
-        </div>
-        <div class="description">
-            <p>
-                Email, year, program, favourite colour, role in project
-            </p>
-        </div>
-    </div>
-
-    <div class="members" id="members">
-        <div class="profile-picture">
-            <img src="Pranshu.png"> 
-        </div>
-        <div class="name">
-            <h2>
-                name
-            </h2>
-        </div>
-        <div class="description">
-            <p>
-                Email, year, program, favourite colour, role in project
-            </p>
-        </div>
-    </div>
-
-    <div class="members" id="members">
-        <div class="profile-picture">
-            <img src="Pranshu.png"> 
-        </div>
-        <div class="name">
-            <h2>
-                name
-            </h2>
-        </div>
-        <div class="description">
-            <p>
-                Email, year, program, favourite colour, role in project
-            </p>
-        </div>
-    </div>
-
-    <div class="members" id="members">
-        <div class="profile-picture">
-            <img src="Pranshu.png"> 
-        </div>
-        <div class="name">
-            <h2>
-                name
-            </h2>
-        </div>
-        <div class="description">
-            <p>
-                Email, year, program, favourite colour, role in project
-            </p>
-        </div>
-    </div>
-
+    <section id="members" class="section members">
+        <h2>Members</h2>
     
 
-    <h1 class="assignments" id="assignments">
-        Assignments
-    </h1>
-    <p class="assignments">
-        go here
-    </p>
+    <div class="members-grid">
+        <div class="member">
+            <h3>Jazib Ahmed</h3>
+            <img src="jazib.jpg" alt="Jazib">
+            <p>Leader<br> Email: 20ja30@queensu.ca</p>
+        </div>
+        <div class="member">
+            <h3>Gurpreet Singh</h3>
+            <img src="gurpreet.jpg" alt="Pranshu">
+            <p>Presenter<br> Email: 21gsgs@queensu.ca</p>
+        </div>
+        <div class="member">
+            <h3>Jordan Capello</h3>
+            <img src="pranshu.png" alt="Jordan">
+            <p>Presenter</p>
+        </div>
+        <div class="member">
+            <h3>Stuart Fong</h3>
+            <img src="pranshu.png" alt="Stuart">
+            <p>Group Member (feel free to add on).</p>
+        </div>
+        <div class="member">
+            <h3>Nathan Fong</h3>
+            <img src="pranshu.png" alt="Nathan">
+            <p>Write something about Member 1 here.</p>
+        </div>
+        <div class="member">
+            <h3>Brandon Cheng</h3>
+            <img src="pranshu.png" alt="Brandon">
+            <p>Write something about Member 1 here.</p>
+        </div>
+    </div>
+    </section>
+
+    <section id="assignments" class="section">
+        <h2>Assignments</h2>
+        <p>Assignment will be posted here soon.</p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
